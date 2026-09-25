@@ -1,5 +1,5 @@
 // ATENÇÃO: troque pelo seu número real de WhatsApp (Brasil + DDD + número).
-const WHATSAPP="5531999999999";
+const WHATSAPP="5531985785744";
 const brl=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 document.addEventListener('DOMContentLoaded',()=>{const m=document.querySelector('.menu'),n=document.querySelector('header .nav');if(m)m.onclick=()=>n.classList.toggle('open');document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>n.classList.remove('open'));const w=document.getElementById('wa');if(w)w.href=`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Olá, Alessandro! Gostaria de conhecer sua consultoria financeira.')}`;budget()});
 function budget(){let r=+document.getElementById('renda').value||0,g=+document.getElementById('gastos').value||0,s=r-g,p=r?(g/r*100):0;document.getElementById('r1').innerHTML=`<b>Saldo mensal:</b> ${brl(s)}<br><b>Comprometimento:</b> ${p.toFixed(1)}%.`}
