@@ -1,0 +1,8 @@
+SITE ALESSANDRO DÓRIA — VERSÃO 2
+
+1. index.html deve ficar na raiz.
+2. A pasta assets contém CSS e JavaScript.
+3. Antes de publicar, altere o número WHATSAPP em assets/script.js.
+4. O e-mail está configurado como contato@alessandrodoria.com.br.
+5. Cloudflare: site estático; comando de build vazio/nenhum; raiz /.
+6. As calculadoras são ilustrativas e não constituem recomendação de investimento.
