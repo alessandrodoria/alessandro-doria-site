@@ -95,4 +95,68 @@
       font-size: 27px;
     }
   }
-</style></body></html>
+</style><!-- Botão voltar ao topo -->
+<button
+  id="backToTop"
+  aria-label="Voltar ao topo"
+  title="Voltar ao topo">
+  ↑
+</button>
+
+<style>
+  #backToTop {
+    position: fixed;
+    right: 22px;
+    bottom: 92px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #d4af37;
+    border-radius: 50%;
+    background: #111;
+    color: #d4af37;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9998;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.30);
+    transition: all 0.25s ease;
+  }
+
+  #backToTop:hover {
+    background: #d4af37;
+    color: #111;
+    transform: translateY(-3px);
+  }
+
+  @media (max-width: 600px) {
+    #backToTop {
+      right: 20px;
+      bottom: 82px;
+      width: 44px;
+      height: 44px;
+      font-size: 22px;
+    }
+  }
+</style>
+
+<script>
+  const backToTop = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 400) {
+      backToTop.style.display = 'flex';
+    } else {
+      backToTop.style.display = 'none';
+    }
+  });
+
+  backToTop.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script></body></html>
